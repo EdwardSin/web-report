@@ -1,0 +1,49 @@
+.filter-container {
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  margin-top: -95px;
+  transition: margin-top .3s ease-out,
+  opacity .1s ease;
+
+  z-index: 1;
+
+  .fa-caret-up {
+    position: absolute;
+    font-size: 3rem;
+    color: #999999;
+    top: -19px;
+    left: 21px;
+  }
+
+  &.open {
+    z-index: 0;
+    opacity: 1;
+    margin-top: -5px;
+    transition: margin-top .4s ease-out,
+    opacity .4s ease .2s;
+  }
+
+  .filter-background {
+    margin-top: 19px;
+    background-color: #B1B1B1;
+    box-shadow: 0 0px .8rem #666 inset;
+
+    .filter-content {
+      padding: 1.3rem;
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .filter-container{
+    margin-top: -220px;
+    transition: margin-top .5s ease-out,
+    opacity .2s ease;
+    &.open{
+      transition: margin-top .5s ease-out,
+      opacity .4s ease .2s;
+    }
+  }
+
+}

@@ -1,0 +1,18 @@
+
+.btn-operation {
+  color: white;
+  background-color: #286090;
+  border-color: #286090;
+  box-shadow: 0 0 5px #aaa;
+  transition: all .2s ease;
+
+  &:hover {
+    color: white;
+    background-color: #214f78;
+    box-shadow: 2px 2px 5px #666;
+  }
+}
+
+.tippy {
+  font-size: 1.4rem;
+}
