@@ -48,23 +48,24 @@
 
 1. Run web-report as backend
    - Create VirtualEnv and install dependencies
-      '''
+      ```
       cd web-report
       python -m venv venv
       .\venv\Scripts\activate.bat
       pip install -r requirements.txt
-      '''
+      ```
    - Start server
-      '''
+      ```
       python manage.py runserver
-      '''
+      ```
+
 1. Run web-report-front-end as frontend
    - Install dependencies
-      '''
+      ```
       npm i
-      '''
+      ```
    - Start frontend server
-      '''
+      ```
       npm start
-      '''
+      ```
 1. Run http://localhost:3000/ to serve the web page.
